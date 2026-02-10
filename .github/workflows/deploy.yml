@@ -10,8 +10,8 @@ jobs:
   test:
     env: 
       MONGODB_CLUSTER_ADDRESS: cluster-rashmi.55ramqq.mongodb.net
-      MONGODB_USERNAME: eranderashmi25
-      MONGODB_PASSWORD: wCXgWkXsLXZyC4Rr
+      MONGODB_USERNAME: ${{ secrets.MONGODB_USERNAME}}
+      MONGODB_PASSWORD: ${{secrets.MONGODB_PASSWORD}}
       PORT: 8080 
     runs-on: macos-latest
     steps:
